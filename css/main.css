@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+}
+.player {
+    margin: 20px;
+    text-align: center;
+}
+.description {
+    text-align: justify;
+}
+.header {
+    text-align: center;
+}
+li {
+    font-style: italic;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
