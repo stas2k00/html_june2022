@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.row-items-1, .row-items-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2268bb;
+    width: 200px;
+    height: 100px;
+}
+.row-items-3 {
+    height: 200px;
+}
+
+.row-items-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    column-gap: 10px;
+
+}
+
+.column-items {
+    display: flex;
+    background-color: #16447a;
+}
+
+h2 {
+    color:white;
+    font-size: 13px;
+    text-align: center;
+}
