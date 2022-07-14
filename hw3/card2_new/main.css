@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 10vh;
+    background-color: blueviolet;
+    column-gap: 80vw;
+}
+
+.main-content {
+    height: 60vh;
+    background-color: #102b3f;
+    position: relative;
+}
+
+.footer {
+    height: 30vh;
+    background-color: blueviolet;
+}
+
+.logo, .navigation {
+    font-size: 5vh;
+}
+
+.fa-solid:hover{
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    position: absolute;
+    column-gap: 5vh;
+    width: 100vw;
+    bottom: -15vh;
+}
+
+.box {
+    height: 30vh;
+    width: 30vh;
+    background-color: #fd9b49;
+    border-radius: 5vh;
+}
