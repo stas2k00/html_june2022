@@ -1,5 +1,4 @@
-.wrapper {
-    margin: 0;
+body {
     height: 95vh;
 }
 
@@ -9,8 +8,7 @@
     align-items: center;
     justify-content: center;
     background-color: #666667;
-    border: 1vh solid white;
-    /*border-radius: 3vw;*/
+    border: 1px solid white;
     text-align: center;
 }
 
@@ -22,7 +20,7 @@
     height: 10%;
 }
 
-.header {
+.header,.box-45 {
     width: 90%;
 }
 
@@ -35,17 +33,12 @@
     height: 60%;
 }
 
-.box-45 {
-    width: 90%;
-}
-
-.bath-section {
+.bath-section,.ad {
     height: 40%;
     width: 89%;
 }
 
 .ad {
-    height: 40%;
     width: 11%;
 }
 
@@ -64,11 +57,9 @@
 
 .types {
     width: 80%;
-    height: 190%;
-    align-self: end;
 }
 
-.related {
+.related,.types {
     height: 190%;
     align-self: end;
 }
@@ -92,52 +83,38 @@
 
 @media screen and (max-width: 600px) {
 
-    .box-345 {
+    .box-345,.box-6789 {
         flex-direction: column;
-        height: 30%;
     }
 
-    .nav,.bath-section,.ad,.box-45 {
+    .nav,.bath-section,.ad,.box-45,.types,.related,.box-89 {
         width: 100%;
     }
 
-    .nav {
+    .nav,.box-345,.related {
         height: 30%;
     }
 
-    .box-45 {
+    .box-45,.box-6789 {
         height: 70%;
     }
 
-    .bath-section,.ad {
+    .bath-section,.ad,.store,.tools {
         height: 100%;
-    }
-
-    .box-6789 {
-        flex-direction: column;
-        height: 70%;
     }
 
     .types {
         order: -1;
-        width: 100%;
         height: 50%;
-    }
-
-    .related {
-        width: 100%;
-        height: 30%;
     }
 
     .box-89 {
         flex-direction: row;
-        width: 100%;
         height: 20%;
     }
 
     .store,.tools {
         width: 50%;
-        height: 100%;
     }
 
     .main-content {
