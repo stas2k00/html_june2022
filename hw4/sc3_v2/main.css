@@ -70,8 +70,7 @@
 
 .related {
     height: 190%;
-    position: relative;
-    bottom: 24vh;
+    align-self: end;
 }
 
 .store,.tools {
@@ -122,13 +121,11 @@
     .types {
         order: -1;
         width: 100%;
-        bottom: 0;
         height: 50%;
     }
 
     .related {
         width: 100%;
-        bottom: 0;
         height: 30%;
     }
 
