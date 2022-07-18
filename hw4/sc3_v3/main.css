@@ -1,0 +1,75 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.border {
+    box-sizing: border-box;
+    border: 10px solid white;
+    color: white;
+    background-color: #666667;
+    width: 100%;
+}
+
+.logo-header,.nav,.store-tools {
+    height: 100px;
+}
+
+.bath-ad,.related {
+    height: 200px;
+}
+
+.logo,.ad {
+    max-width: 100px;
+}
+
+.types {
+    height: 600px;
+}
+
+.footer {
+    height: 150px;
+}
+
+@media screen and (min-width: 600px) {
+    .nav,.related {
+        position: absolute;
+        max-width: 100px;
+        height: 600px;
+    }
+
+    .bath-ad,.types {
+        position: relative;
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+
+    .types {
+        width: calc(100% - 100px - 100px);
+    }
+
+    .related {
+        right: 0;
+        top: 300px;
+    }
+
+    .store-tools {
+        position: absolute;
+        flex-direction: column;
+        top:700px;
+        height: 200px;
+    }
+
+    .store,.tools {
+        height: 100%;
+    }
+
+}

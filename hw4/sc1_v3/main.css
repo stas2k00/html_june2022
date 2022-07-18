@@ -1,0 +1,54 @@
+.wrapper {
+    margin: 0 auto;
+    height: 95vh;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d4;
+    border: 1vw solid white;
+    border-radius: 3vw;
+}
+
+.bc {
+    display: flex;
+}
+
+.a,.bc {
+    height: 50%;
+}
+
+.b {
+    width: 100%;
+    height: 95%;
+}
+
+.c {
+    height: 95%;
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bc {
+        flex-direction: column;
+        width: 98%;
+        height: 80%;
+    }
+
+    .a {
+        height: 20%;
+    }
+
+    .b {
+        height: 75%;
+    }
+
+    .c {
+        height: 25%;
+        width: 100%;
+    }
+
+}
