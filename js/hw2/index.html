@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS_2</title>
+</head>
+<body>
+<script>
+    let stasik = ['Stanislav','Pesternikov','Pes',22,'student',true,'boy','white','noob','loser']
+    for (const stasikElement of stasik) {
+        console.log(stasik[stasikElement])
+    }
+    let books = {
+        book1: {
+            title:'Winnie Pooh',
+            pageCount:236,
+            genre:'Literary realism'
+        },
+        book2: {
+            title:'Crocodile Gena and his friends',
+            pageCount:176,
+            genre:'Horror'
+        },
+        book3: {
+            title:'Tverdotilna elektronika',
+            pageCount:Infinity+1,
+            genre:'Mystery,Thriller,Horror,Historical,Romance,Science Fiction'
+        }
+    }
+    console.log(books);
+    let authors = [
+        {
+            name:'Alan Alexander Miln',
+            age:'18 Jan 1882 - 31 Jan 1956'
+        },
+        {
+            name:'Uspenskii Eduard Mykolayovich',
+            age:'22 Dec 1937 - 14 Aug 2018'
+        },
+        {
+            name:'Druzhinin Anatolii Oleksandrovich',
+            age:75
+        }
+    ]
+    books.book1.author = authors [0];
+    books.book2.author = authors [1];
+    books.book3.author = authors [authors.length-1];
+    console.log(books);
+    let players = [
+        {
+         name:'Vova',
+         username:'nagibator',
+         password:'vasdf12dsa'
+        },
+        {
+         name:'Vasya',
+         username:'genius',
+         password:'sad21dxz12'
+        },
+        {
+         name:'Stas',
+         username:'stasik',
+         password:'sad12xcz'
+        },
+        {
+         name:'Alex',
+         username:'photonicAlex',
+         password:'sadf231csd'
+        },
+        {
+         name:'Nastya',
+         username:'moroz-winter',
+         password:'123xzdd12'
+        },
+        {
+         name:'Orest',
+         username:'pacan1',
+         password:'sdaf12asd'
+        },
+        {
+         name:'Vlad',
+         username:'iq-lord',
+         password:'12312xz12'
+        },
+        {
+         name:'Lybomir',
+         username:'lovemir',
+         password:'va4232dsa'
+        },
+        {
+         name:'Kirill',
+         username:'kiill',
+         password:'vsadikuy!2sa'
+        },
+        {
+         name:'Bohdan',
+         username:'ilovemc',
+         password:'xv32cfxdsa'
+        }
+    ]
+
+    for (const player of players) {
+        console.log(player.password)
+    }
+</script>
+</body>
+</html>
