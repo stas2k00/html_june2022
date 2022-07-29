@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS_3</title>
+</head>
+<body>
+<script>
+
+     /** - Є змінна х, якій ви надаєте довільне числове значення.
+     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
+     Перевірте  скрипт при a, що дорівнює 1, 0, -3
+     **/
+
+    let a = +prompt('Enter number a')
+    console.log(a !== 0 && !isNaN(a) ? 'Вірно' : 'Невірно')
+
+     /** - Дано змінну time яка рівна числу від 0 до 59.
+      Потрібно написати код, який перевірить, до якої четверті години попадає число
+      (в першу, другу, третю или четверту частину години).
+      **/
+
+    let time = Math.floor(Math.random()*60)
+    if (time < 15) {
+        console.log(`Хвилина = ${time} => В першу четверть`)
+    } else if (time < 30) {
+        console.log(`Хвилина = ${time} => В другу четверть`)
+    } else if (time < 45) {
+        console.log(`Хвилина = ${time} => В третю четверть`)
+    } else if (time < 60) {
+        console.log(`Хвилина = ${time} => В четверту четверть`)
+    }
+
+     /** - У змінній day дано якесь число від 1 до 31.
+      Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+      **/
+
+    let day = (Math.floor(Math.random()*30)+1)
+    if (day < 10) {
+        console.log(`День = ${day} => В першу декаду`)
+    } else if (day < 20) {
+        console.log(`День = ${day} => В другу декаду`)
+    } else if (day < 31) {
+        console.log(`День = ${day} => В третю декаду`)
+    }
+
+     /** - Скласти розклад на тиждень за домопоги switch.
+      Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано
+      на цей день (можна замість плану на день, назву дня англійською).
+      **/
+
+    switch (prompt('Day of week?')) {
+        case '1':
+            console.log('Monday')
+            break
+        case '2':
+            console.log('Tuesday')
+            break
+        case '3':
+            console.log('Wednesday')
+            break
+        case '4':
+            console.log('Thursday')
+            break
+        case '5':
+            console.log('Friday')
+            break
+        case '6':
+            console.log('Saturday')
+            break
+        case '7':
+            console.log('Sunday')
+            break
+        default:
+            console.log('Wrong day')
+    }
+
+    /** Користувач вводить або має два числа.
+     Потрібно знайти та вивести максимальне число з тих двох .
+     Також потрібно врахувати коли введені рівні числа.
+     **/
+
+    let num1 = Math.floor(Math.random()*100)
+    let num2 = Math.floor(Math.random()*100)
+    if (num1 === num2) {
+        console.log(`${num1} = ${num2}`)
+    } else if (num1 > num2) {
+        console.log(`${num1} > ${num2}`)
+    } else if (num1 < num2){
+        console.log(`${num1} < ${num2}`)
+    }
+
+    /** є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).
+     Напишіть код який, за допомоги  оператора || буде присвоювати змінній х значення "default"
+     якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
+     **/
+
+    let x = prompt('Enter something')
+    switch (x) {
+        case 'NaN':
+            x = NaN
+            break
+        case 'undefined':
+            x = undefined
+            break
+        case 'null':
+            x = null
+            break
+        case 'false':
+            x = false
+            break
+        case '0':
+            x = 0
+            break
+    }
+    x = x || "default"
+    console.log(x)
+
+</script>
+</body>
+</html>
