@@ -1,0 +1,21 @@
+.user {
+    display: flex;
+    width: fit-content;
+    column-gap: 10px;
+}
+
+.key {
+    color: #fd9b49;
+}
+
+.id:hover {
+    color: red;
+}
+
+.name:hover {
+    color: #ffcc00;
+}
+
+.age:hover {
+    color: rgba(189, 36, 194, 0.5);
+}

@@ -1,30 +1,48 @@
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+document.write(`<p>За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині</p>`)
+document.write(`
+    <div class="flex">`);
 for (let i = 1; i <= 10; i++) {
     document.write(`
-    <div>
+    <div class="margin">
     Okten
     </div>
     `)
 }
+document.write(`
+    </div>`);
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+document.write(`<p>За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині</p>`)
+document.write(`
+    <div class="flex">`);
 for (let i = 1; i <= 10; i++) {
     document.write(`
-    <div>
+    <div class="margin">
     Okten [${i}]
     </div>
     `)
 }
+document.write(`
+    </div>`);
 //- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+document.write(`<p>За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.</p>`)
+document.write(`
+    <div class="flex">`);
 let i = 1;
 while (i <= 20) {
     document.write(`
-    <div>
+    <div class="margin">
     <h1>Vasya</h1>
     </div>
     `)
     i++
 }
+document.write(`
+    </div>`);
 //- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+document.write(`<p>За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.</p>`)
+document.write(`
+    <div class="flex">`);
 i = 1;
 while (i <= 20) {
     document.write(`
@@ -34,6 +52,8 @@ while (i <= 20) {
     `)
     i++
 }
+document.write(`
+    </div>`);
 //- Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
