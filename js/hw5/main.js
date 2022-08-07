@@ -3,9 +3,7 @@ let areaCircle = (r) => Math.PI * r ** 2
 let areaCylinder = (r, h) => 2 * Math.PI * r * h + 2 * Math.PI * r ** 2
 
 function logItemOfArray(array) {
-    for (const arrayElement of array) {
-        console.log(arrayElement)
-    }
+    for (const arrayElement of array) console.log(arrayElement)
 }
 
 let paragraph = (text) => document.write(`<p>${text}<p>`)
