@@ -1,0 +1,61 @@
+.simpsons-family {
+    display: flex;
+    display: none;
+    column-gap: 50px;
+    list-style: none;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.member {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.simpsons-family img {
+    height: 300px;
+}
+.simpsons-family p {
+    text-align: justify;
+}
+.courses {
+    display: flex;
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.courses ul {
+    text-align: left;
+}
+.month-hours {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.menu, .collapse {
+    display: none;
+}
+
+.courses-duration {
+    display: flex;
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;;
+}
+.main-content {
+    display: none;
+}
+.display-random {
+    display: none;
+}
+
+.display-age {
+    display: none;
+}
+.display-table {
+    display: none;
+}
