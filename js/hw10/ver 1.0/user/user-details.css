@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+.key {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+.nameOfKey,.keys {
+    color: #fd9b49;
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+.valueOfKey {
+    color: white;
+}
+.btnPost {
+    box-sizing: border-box;
+    color: white;
+    border: 3px solid cyan;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+}
+.btnPost:hover {
+    color: black;
+    background-color: cyan;
+}
+::marker {
+    color: #fd9b49;
+}
+ol {
+    color: white;
+}
+li {
+    margin: 20px 0;
+}
+.btnMoreInfo {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid cyan;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btnMoreInfo:hover {
+    color: black;
+    background-color: cyan;
+}

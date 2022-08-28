@@ -9,11 +9,13 @@ let arrayString = ['hello world','lorem ipsum','javascript is cool']
 let stringLength = []
 let stringUpperCase = []
 let stringLowerCase = []
-arrayString.forEach(string => {stringLength.push(string.length); stringUpperCase.push(string.toUpperCase()); stringLowerCase.push(string.toLowerCase())})
+arrayString.forEach(string => {stringLength.push(string.length); stringUpperCase.push(string.toUpperCase()); stringLowerCase.push((string.toUpperCase()).toLowerCase())})
 console.log(arrayString, stringLength, stringUpperCase, stringLowerCase)
-let str = ' dirty string   '
-str = str.substring(str.indexOf('d'),str.indexOf('g')+1);
-console.log(str)
+let str1 = '      dirty      string  asdasdasdasd    dwq2e 123e 12 3egdf 453 t45! '
+let str2 = ''
+str1.split(' ').filter((value)=>value!=='').forEach((value, index,array) => value !== array[array.length-1] ? str2 =`${str2}${value} `: str2 =`${str2}${value}`);
+console.log(str1);
+console.log(str2);
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
@@ -32,6 +34,7 @@ console.log(arrayString)
 let sortNums = (nums, d) => d === 'up' ? nums.sort((num1, num2) => num1 - num2) : d === 'down' ? nums.sort((num1, num2) => num2 - num1) : false
 console.log(sortNums(arrayNumbers,'up'))
 console.log(sortNums(arrayNumbers,'down'))
+console.log(arrayNumbers)
 
 // - є масив
 // let coursesAndDurationArray = [
@@ -52,7 +55,10 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
     ];
-console.log(coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration));
+let sortMonthDuration = (array, d) => d === 'up' ? array.sort((a,b)=>a.monthDuration - b.monthDuration) : d === 'down' ? array.sort((a,b)=> b.monthDuration - a.monthDuration) : false
+console.log(sortMonthDuration(coursesAndDurationArray,'up'));
+console.log(sortMonthDuration(coursesAndDurationArray,'down'));
+console.log(coursesAndDurationArray);
 console.log(coursesAndDurationArray.filter(value => value.monthDuration > 5));
 // описати колоду карт
 // - знайти піковий туз

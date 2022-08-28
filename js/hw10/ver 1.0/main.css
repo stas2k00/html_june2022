@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+.user {
+     display: flex;
+     column-gap: 20px;
+     align-items: center;
+ }
+
+.name {
+    color: white;
+}
+
+.btn-more {
+     padding: 5px;
+     text-decoration: none;
+     color: white;
+     border: 3px solid cyan;
+     border-radius: 5px;
+ }
+
+ .btn-more:hover {
+     color: black;
+     background-color: cyan;
+ }
+
+ .id {
+     color: #fd9b49;
+ }
+
+ .divKey {
+     display: flex;
+ }
